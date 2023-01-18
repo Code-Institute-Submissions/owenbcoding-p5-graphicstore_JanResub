@@ -39,7 +39,7 @@
           </div>
           <img src="../media/abstract-art.jpg" class="card-img-top" alt="abstract-art">
           <div class="card-body">
-            <p class="card-text">This is an example of some of the abstract art that you can buy from the store</p>
+            <p class="card-text">This art piece is a representation of the type of abstract art that can be purchased from our store. Each of the artworks are crafted with great care and attention to detail, to evoke emotions and provoke thought in the observer.</p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated 3 mins ago</small>
@@ -51,7 +51,7 @@
           </div>
           <img src="../media/nft.jpg" class="card-img-top" alt="NFT-art">
           <div class="card-body">
-            <p class="card-text">This is an example of some NFT Art you can buy from the store</p>
+            <p class="card-text">This artwork is an example of the NFT art that can be purchased from our store. NFT art is a digital form of art that is verified on blockchain technology and therefore, it's one-of-a-kind, and cannot be replicated or replaced. Our store offers a wide range of NFT art pieces, each with its unique style, and representation.</p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated 3 mins ago</small>
@@ -63,7 +63,7 @@
           </div>
           <img src="../media/Lofi-livingroom.jpg" class="card-img-top" alt="Lofi-art">
           <div class="card-body">
-            <p class="card-text">This is an example of lofi Art you can buy from the store</p>
+            <p class="card-text">This piece of art is an example of the lo-fi style that can be found in our store. The lo-fi aesthetic is characterized by its gritty and raw appearance, often featuring muted colors and a vintage or retro feel.</p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated 3 mins ago</small>
@@ -73,7 +73,7 @@
       <form class="mt-3 container my-5 px-5 w-25" action="{% url 'subscribe' %}" method="POST" id="profile-update-form">
         <p class="text-center">Enter your email</p>
         {% csrf_token %}
-        {{ form|crispy }}
+        {{ form | crispy }}
         <div class="d-flex justify-content-center py-3">
           <button class="btn btn-black rounded-0 text-uppercase float-right">Sub to Newsletter</button>
         </div>
