@@ -3,7 +3,11 @@ html {
 }
 
 body {
-    font-family: cursive;
+    font-family: 'Artifika', serif;
+}
+
+footer { 
+    padding-bottom: 10px;
 }
 
 .carousel-item {
