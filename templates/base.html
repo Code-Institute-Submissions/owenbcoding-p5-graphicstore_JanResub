@@ -15,6 +15,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Artifika&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{% static 'favicon/logo.png' %}">
     {% endblock %}
 
     {% block corecss %}
@@ -37,18 +38,19 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Graphic Store{% block extra_title %}{% endblock %}</title>
+    <title>Graphic Store{% block extra_title %} {% endblock %}</title>
   </head>
   <body>
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'index' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>Graphic</strong> Store</h2>
+                <a href="{% url 'index' %}" class="d-flex nav-link main-logo-link">
+                    <img class="ml-5 mt-2 mr-2" src="{% static 'favicon/logo.png' %}" alt="logo">
+                    <h2 class="logo-font text-black my-0 mt-4 ml-2"><strong>Graphic</strong> Store</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="{% url 'products' %}">
+                <form method="get" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
