@@ -176,7 +176,7 @@ def CommentUpdateView(request, pk):
         if form.is_valid():
             form.save()
 
-    return redirect(reverse('product_detail', args=[comment.pk]))
+    return redirect(reverse('product_detail', args=[comment.product.id]))
 
 
 @login_required
