@@ -125,8 +125,21 @@
                             {{ user.username }}
                         </span> wrote:
                     </p>
+                    <form method="POST" action="{% url 'delete_comment' comment.id %}">
+                        {% csrf_token %}
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-danger">Delete Comment</button>
+                        </div>
+                    </form>
                     <!-- The body of the comment goes before the | -->
                     {{ comment.body | linebreaks }}
+                    <h2>Please Edit your comment here:</h2>
+                    <p>But please know that any edit you make will not be reversible.</p>
+                    <form method="post" action="{% url 'update_comment' comment.id %}" style="margin-top: 1.3em;">
+                        {{ form | crispy }}
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-signup btn-lg">Edit</button>
+                    </form>
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}
