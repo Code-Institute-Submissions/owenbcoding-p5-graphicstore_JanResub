@@ -5,11 +5,11 @@ from .models import Newsletter
 
 
 class NewsletterAdmin(admin.ModelAdmin):
-    readonly_fields = ('email', 'date',)
+    readonly_fields = ('email', 'date', "user_id")
 
-    fields = ('date','email',)
+    fields = ('date', 'email', "user_id")
 
-    list_display = ('email', 'date',)
+    list_display = ('email', 'date', "user_id")
 
     ordering = ('-date',)
 
