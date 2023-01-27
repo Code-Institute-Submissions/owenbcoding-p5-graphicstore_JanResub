@@ -26,7 +26,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class CommentAdmin(admin.ModelAdmin):
 
-    list_display = ('name', 'body', 'product', 'created_on')
+    list_display = ('id', 'name', 'body', 'product', 'created_on')
     list_filter = ('created_on',)
     search_fields = ('name', 'email', 'body')
 
