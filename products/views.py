@@ -90,8 +90,8 @@ def product_detail(request, product_id):
 def add_product(request):
     """ Add a product to the store """
     if not request.user.is_superuser:
-        message.error(request, 'Sorry, Only store owners can do that.')
-        return redirect(reverse('home'))
+        messages.error(request, 'Sorry, Only store owners can do that.')
+        return redirect(reverse('index'))
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
