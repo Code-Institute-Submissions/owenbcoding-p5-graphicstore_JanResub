@@ -1,10 +1,13 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
+from django.core.mail import send_mail
 from django.contrib import messages
 from django.shortcuts import redirect
 
 from .models import UserProfile
 from .forms import UserProfileForm, TicketForm
+from home.forms import NewsletterForm
+from home.models import Newsletter
 
 from checkout.models import Order
 # Create your views here.
@@ -58,10 +61,28 @@ def order_history(request, order_number):
 
 @login_required
 def tickets(request):
-    """ """
+    """  """
     form = TicketForm(request.POST)
     if form.is_valid():
         ticket_new = form.save(commit=False)
         ticket_new.user = request.user
         ticket_new.save()
     return redirect('profile')
+
+
+@login_required
+def editemail(request):
+    """Allows a user to update their newsletter email if logged in"""
+    form = NewsletterForm(request.POST)
+    if request.user.is_authenticated:
+        newsletter = Newsletter.objects.get(user_id=request.user)
+        newsletter.email = form.data["email"]
+        newsletter.save()
+        send_mail(
+            "Subject here",
+            "Here is the message.",
+            "from@example.com",
+            [form.data["email"]],
+            fail_silently=False,
+        )
+        return redirect("create_post")
