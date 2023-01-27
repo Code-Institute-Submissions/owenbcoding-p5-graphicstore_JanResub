@@ -1,11 +1,18 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views.generic import (
+     View,
+     ListView,
+     TemplateView,
+     UpdateView,
+     DeleteView
+     )
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category
-from .forms import CommentForm, ProductForm
+from .forms import CommentForm, ProductForm, Comment
 
 # Create your views here.
 
@@ -140,6 +147,7 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
@@ -151,3 +159,36 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def CommentUpdateView(request, pk):
+    """ Custom model for comments and logic to edit comment in product_detial """
+    comment = get_object_or_404(Comment, pk=pk)
+    """ Update comments via product_detail.html """
+    form_class = CommentForm
+    context_object_name = 'comment'
+    template_name = 'product_detail.html'
+
+    if request.method == 'POST':
+        # Update the comment with the new data
+        form = CommentForm(request.POST, instance=comment)
+        if form.is_valid():
+            form.save()
+
+    return redirect(reverse('product_detail', args=[comment.pk]))
+
+
+@login_required
+def CommentDeleteView(request, pk):
+    """ Custom model for comments and logic to delete comment in product_detial """
+    comment = get_object_or_404(Comment, pk=pk)
+    """ Update comments via product_detail.html """
+    form_class = CommentForm
+    template_name = 'product_detail.html'
+    context_object_name = 'comment'
+
+    if request.method == 'POST':
+        comment.delete()
+        # Return a success URL
+        return redirect(reverse('product_detail', args=[comment.content_object.pk]))
