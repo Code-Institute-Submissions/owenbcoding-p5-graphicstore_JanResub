@@ -189,6 +189,8 @@ def CommentDeleteView(request, pk):
     context_object_name = 'comment'
 
     if request.method == 'POST':
+        form = CommentForm(request.POST, instance=comment)
+        post = comment.product
         comment.delete()
         # Return a success URL
-        return redirect(reverse('product_detail', args=[comment.content_object.pk]))
+        return redirect(reverse('product_detail', args=[post.id]))
