@@ -125,7 +125,7 @@
                             {{ user.username }}
                         </span> wrote:
                     </p>
-                    <form method="POST" action="{% url 'delete_comment' comment.id %}">
+                    <form method="post" action="{% url 'delete_comment' comment.id %}">
                         {% csrf_token %}
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-danger">Delete Comment</button>
