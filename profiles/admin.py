@@ -9,7 +9,7 @@ class TicketAdmin(admin.ModelAdmin):
 
     fields = ('title', 'body',)
 
-    list_display = ('title', 'body',)
+    list_display = ('id', 'title', 'body',)
 
     ordering = ('-date',)
 
