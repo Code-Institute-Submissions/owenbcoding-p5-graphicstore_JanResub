@@ -2,9 +2,9 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
 from django.contrib import messages
-from django.shortcuts import redirect
+from django.shortcuts import redirect, reverse
 
-from .models import UserProfile
+from .models import UserProfile, Ticket
 from .forms import UserProfileForm, TicketForm
 from home.forms import NewsletterForm
 from home.models import Newsletter
@@ -29,6 +29,7 @@ def profile(request):
         form = UserProfileForm(instance=profile)
         ticketform = TicketForm()
         orders = profile.orders.all()
+        tickets = Ticket.objects.filter(user=request.user)
 
     template = 'profiles/profile.html'
     context = {
@@ -37,6 +38,7 @@ def profile(request):
         'profile': profile,
         'orders': orders,
         'on_profile_page': True,
+        'tickets': tickets,
     }
 
     return render(request, template, context)
@@ -86,3 +88,32 @@ def editemail(request):
             fail_silently=False,
         )
         return redirect("create_post")
+
+
+@login_required
+def ticketdetail(request, ticket_id):
+    """ A view to show individual ticket details """
+    form = TicketForm()
+    ticket = get_object_or_404(Ticket, pk=ticket_id)
+    if request.POST:
+        form = TicketForm(request.POST, instance=ticket)
+        if form.is_valid():
+            form.save()
+
+    context = {
+        'ticket': ticket,
+        'ticketform': form,
+    }
+
+    return render(request, 'profiles/ticket_detail.html', context)
+
+
+@login_required
+def ticketdelete(request, ticket_id):
+    """ A view to delete a ticket the user made """
+    ticket = get_object_or_404(Ticket, pk=ticket_id)
+
+    if request.method == 'POST':
+        ticket.delete()
+        # Return a success URL
+        return redirect(reverse('profile'))
