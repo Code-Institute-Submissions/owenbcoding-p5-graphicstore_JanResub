@@ -133,8 +133,7 @@
                     </form>
                     <!-- The body of the comment goes before the | -->
                     {{ comment.body | linebreaks }}
-                    <h2>Please Edit your comment here:</h2>
-                    <p>But please know that any edit you make will not be reversible.</p>
+                    <h3>Please Edit your comment here:</h3>
                     <form method="post" action="{% url 'update_comment' comment.id %}" style="margin-top: 1.3em;">
                         {{ form | crispy }}
                         {% csrf_token %}
