@@ -99,28 +99,55 @@ Graphic Store is a site where users can see art work and people can view the dif
 * ### Sitemap 
      I went to site map website to create this file https://www.mysitemapgenerator.com/ Full file availble upon email request
 
-    <img src="media/sitemap.png" alt="sitemap" >
-
 * ### Robots 
      I went to this site map to get a demo for the robots.txt https://en.ryte.com/
 
 * # Wireframes
     <details>
     <summary>-Desktop Wireframes:</summary>
-     Home Page one
-     <img src="media/.jpg" alt="home-page1" >
-     Home Page two
-     <img src="media/.jpg" alt="home-page2" >
+     Home Page 
+
+     <img src="media/home-page1.png" alt="home-page1" >
+
      About Page
-     <img src="media/.jpg" alt="about-page2" >
-     Store Page 
-     <img src="media/.jpg" alt="about-page2" >
+
+     <img src="media/about-page.png" alt="about-page" >
+
+     Store Page
+
+     <img src="media/store-page.jpg" alt="store-page" >
+
      Profile Page
-     <img src="media/.jpg" alt="profile-page" >
+
+     <img src="media/profile-page.png" alt="profile-page" >
+
      Shopping bag Page
-     <img src="media/.jpg" alt="shopping-page" >
+
+     <img src="media/shopping-bag.jpg" alt="shopping-page" >
      
-     <img src="media/.jpg" alt="-page" >
+     Register Page
+
+     <img src="media/.jpg" alt="shopping-page" >
+
+     Login Page 
+
+     <img src="media/.jpg" alt="shopping-page" >
+    </details>
+
+    <details>
+    <summary>-Mobile Wireframes:</summary>
+     Home Page 
+
+     <img src="media/home-page1.png" alt="home-page1" >
+
+     About Page
+
+     <img src="media/about-page.png" alt="about-page" >
+
+     Store Page
+
+     <img src="media/.jpg" alt="store-page" >
+
     </details>
 
 ### Frameworks, Tech Used
@@ -137,7 +164,7 @@ Graphic Store is a site where users can see art work and people can view the dif
     - GitHub is used to store the projects code after being pushed from Git.
 7. [Unsplash:](https://unsplash.com/)
     - Unsplash was used for some of the pictures on the blog site by typing in tech in to the search bar.
-8. [Freepik:]()
+8. [Freepik:](https://www.freepik.com/)
     - pixabay was used for some of the pictures for testing posting a blog on the site
 9. [pixabay:](https://pixabay.com/)
     - pixabay was used for some of the pictures for testing posting a blog on the site
@@ -315,9 +342,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Content
 
--   All content was written by the developer.
-
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+- All the content was done by me owenbcoding such as text and writing
 
 ### Media
 
