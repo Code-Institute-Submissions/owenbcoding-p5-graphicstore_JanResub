@@ -105,6 +105,7 @@ Graphic Store is a site where users can see art work and people can view the dif
 * # Wireframes
     <details>
     <summary>-Desktop Wireframes:</summary>
+
      Home Page 
 
      <img src="media/home-page1.png" alt="home-page1" >
@@ -115,7 +116,7 @@ Graphic Store is a site where users can see art work and people can view the dif
 
      Store Page
 
-     <img src="media/store-page.jpg" alt="store-page" >
+     <img src="media/store-page.png" alt="store-page" >
 
      Profile Page
 
