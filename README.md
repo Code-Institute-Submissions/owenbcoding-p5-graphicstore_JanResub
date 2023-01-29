@@ -206,42 +206,78 @@ In this section, I will go over each of the sections on the website such as the 
 <details>
     <summary>-Existing Features:</summary>
    
-  - __Navigation bar and carosel__
+  __Navigation bar and carosel__
 
   <img src="media/home-page1.jpg" alt="home-page" >
 
-  - __The Main Page Content__
+  __The Main Page Content__
 
-   <img src="media/home-content.png" alt="home-content" >
+  <img src="media/home-content.png" alt="home-content" >
 
-  - __About Page__
+  __About Page__
 
   <img src="media/about-content.png" alt="about-page" >
 
-- __Store Page__
+  __Store Page__
 
-  - 
+  <img src="media/store-content.png" alt="store-page" >
  
 
-- __Detailed Product Page__
+  __Detailed Product Page__
 
-  - 
+  <img src="media/detailed-product.png" alt="detailed-page" >
 
-- __Users Profile Page__ 
+  __Users Profile Page__ 
 
-  - 
+  <img src="media/profile-content.png" alt="profile-page" >
 
-- __The Checkout Page__
+  __The Checkout Page__
 
-  - 
+  <img src="media/checkout-content.png" alt="checkout-page" >
 
-- __The Register Page__
+  __The Register Page__
 
-  - 
+  <img src="media/register-content.png" alt="register-page" >
 
-- __The Login Page__
+  __The Login Page__
 
-  - 
+  <img src="media/login-content.png" alt="login-page" >
+
+  __Newsletter__
+
+  <img src="media/newsletter-content.png" alt="newsletter-page" >
+  <img src="media/newsletterunsub.png" alt="newsletter-page" >
+
+  __Comments__
+
+  <img src="media/comments-content.png" alt="login-page" >
+
+  __Tickets__
+
+  <img src="media/createticket.png" alt="ticket" >
+  <img src="media/ticket-content.png" alt="ticket-page" >
+  
+  __Shopping__
+
+  <img src="media/shopping-cart.png" alt="ticket" >
+
+ __Drop-down__
+ - Product management is only shown for super users
+ 
+  <img src="media/product-management.png" alt="management" >
+
+ - My Profile and logout is only shown for users who are logged in regular users dont have product management
+
+  <img src="media/normal-user.png" alt="user-links" >
+
+__Sign-out-page__
+
+  <img src="media/sign-out.png" alt="sign-out" >
+
+__Success-message__
+
+  <img src="media/success.png" alt="success" >
+
 </details>
 
 ## Testing
@@ -258,14 +294,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
 
         1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a carosel that displays 3 pictures that repersent the 3 categories you can buy from the store.
-        2. The main points are the 3 categories of the store
-        3. The user options to learn more about the organisation.
+        2. The main points are the 3 categories of the store are Abstract Art / NFT Art and Lofi Art on the home page
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
         1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-        3. On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
+        2. 
+        3. 
 
     3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
         1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
@@ -304,16 +339,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+-   The Website was tested on Google Chrome And Firefox
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
 
--   On some mobile devices the Hero Image pushes the size of of the carosel image 
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+-   On some mobile devices the Hero Image pushes the size of of the carosel image is stretched up abit
 
 
 <details>
@@ -330,11 +362,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
   ![brave_Ou9RzqGGwB](https://user-images.githubusercontent.com/43074374/204935127-3de1668a-b040-47c4-8fc9-10b52e9ba6ab.png)
 
-- __ Checkout success page after purchasing a product __
+  - __ Checkout success page after purchasing a product __
 
   ![brave_Ou9RzqGGwB](https://user-images.githubusercontent.com/43074374/204935127-3de1668a-b040-47c4-8fc9-10b52e9ba6ab.png)
 
-- __ Order history saved in user profile page __
+  - __ Order history saved in user profile page __
 
   ![brave_lDbI5cpAig](https://user-images.githubusercontent.com/43074374/204936426-31d22ed3-1e62-4313-8d46-5cf28a08d2e6.png)
  
@@ -342,11 +374,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Code
 
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
+-   The full-screen carosel images came from this [Freepik](https://www.freepik.com/)
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+-   []
+-   []
+-   []
 
 ### Content
 
@@ -355,8 +389,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Media
 
 -   All Images were taken from the following websites 
--   [Freepik](https://developer.mozilla.org/)
--   [Pixabay](https://developer.mozilla.org/)
+-   [Freepik](https://www.freepik.com/)
+-   [Pixabay](https://pixabay.com/)
 
 ### Acknowledgements
 -   Credit to code institute for projects template 
