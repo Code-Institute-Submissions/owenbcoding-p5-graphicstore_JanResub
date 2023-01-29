@@ -96,7 +96,7 @@ Graphic Store is a site where users can see art work and people can view the dif
 
     <img src="media/diagram.png" alt="diagram" >
 
-* ### Custom models | Newsletter | Comments and tickets
+* ### The 3 Custom models are | Newsletter | Comments and tickets
     1. The Three custom models I used for this project were setting up newsletter functionality with crud
     2. I also added comments on the detailed page for each of Products with all crud functionality
     3. I also added A ticket support system on the users profile page which has all crud functionality
@@ -132,7 +132,7 @@ Graphic Store is a site where users can see art work and people can view the dif
 
      Shopping bag Page
 
-     <img src="media/shopping-bag.jpg" alt="shopping-page" >
+     <img src="media/shopping-bag.png" alt="shopping-page" >
      
      Register Page
 
@@ -147,7 +147,7 @@ Graphic Store is a site where users can see art work and people can view the dif
     <summary>-Mobile Wireframes:</summary>
      Home Page 
 
-     <img src="media/mobile-home.png" alt="home-page1" >
+     <img src="media/home-mobile.png" alt="home-mobile" >
 
      About Page
 
@@ -206,18 +206,17 @@ In this section, I will go over each of the sections on the website such as the 
 <details>
     <summary>-Existing Features:</summary>
    
-  - __Navigation bar__
+  - __Navigation bar and carosel__
 
-  - 
+  <img src="media/home-page1.jpg" alt="home-page" >
 
   - __The Main Page Content__
 
-  - This is the main pages content where it displayes the hero image and all the bootsrap cards and footer at the bottom
+   <img src="media/home-content.png" alt="home-content" >
 
+  - __About Page__
 
-- __About Page__
-
-  - 
+  <img src="media/about-content.png" alt="about-page" >
 
 - __Store Page__
 
