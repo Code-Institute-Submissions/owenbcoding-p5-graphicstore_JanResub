@@ -33,7 +33,7 @@ Graphic Store is a site where users can see art work and people can view the dif
     - ### Admin user stories
         1. As a superuser you will be able to see a list of users who registered on the site
         2. As a superuser you will be able to manage products with crud functionality on the frontend and admin panel
-        3. As a superuser you you wwill be able to manage the comments on products by deleting them in the admin panel.
+        3. As a superuser you you will be able to manage the comments on products by deleting them in the admin panel.
 
 -   ## Target Audience
     - The target audience for the website is for anyone who is looking to buy some art that they would like to use as their desktop background or background in general for all social of their social accounts or anything they would like.
@@ -48,7 +48,7 @@ Graphic Store is a site where users can see art work and people can view the dif
     - Graphic Store handles data with full CRUD Functionality for users on the frontend:
     - Create - Users can create a profile account and create comments / tickets and sign up for a newsletter
     - Read - Users can read the discription of the art work details and read their oder history details.
-    - Update - Users can update their location details and newsletter email, comments and newsletter.
+    - Update - Users can update their location details and newsletter email and comments
     - Delete - Useres can delete thier comments and remove thier email for the newsletter if they so choose.
 
 -   ### Colours
@@ -96,8 +96,16 @@ Graphic Store is a site where users can see art work and people can view the dif
 
     <img src="media/diagram.png" alt="diagram" >
 
+* ### Custom models | Newsletter | Comments and tickets
+    1. The Three custom models I used for this project were setting up newsletter functionality with crud
+    2. I also added comments on the detailed page for each of Products with all crud functionality
+    3. I also added A ticket support system on the users profile page which has all crud functionality
+
 * ### Sitemap 
-     I went to site map website to create this file https://www.mysitemapgenerator.com/ Full file availble upon email request
+     I went to site map website to get visual help for the site map for my site https://www.mysitemapgenerator.com/ 
+     Then I made the actual site map in balsamic wireframes
+     
+     <img src="media/sitemap.png" alt="home-page1" >
 
 * ### Robots 
      I went to this site map to get a demo for the robots.txt https://en.ryte.com/
@@ -128,26 +136,26 @@ Graphic Store is a site where users can see art work and people can view the dif
      
      Register Page
 
-     <img src="media/.jpg" alt="shopping-page" >
+     <img src="media/signup.png" alt="register-page" >
 
      Login Page 
 
-     <img src="media/.jpg" alt="shopping-page" >
+     <img src="media/signin.png" alt="login-page" >
     </details>
 
     <details>
     <summary>-Mobile Wireframes:</summary>
      Home Page 
 
-     <img src="media/home-page1.png" alt="home-page1" >
+     <img src="media/mobile-home.png" alt="home-page1" >
 
      About Page
 
-     <img src="media/about-page.png" alt="about-page" >
+     <img src="media/mobile-about.png" alt="about-page" >
 
      Store Page
 
-     <img src="media/.jpg" alt="store-page" >
+     <img src="media/mobile-store.jpg" alt="store-page" >
 
     </details>
 
@@ -250,9 +258,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-        2. The main points are made immediately with the hero image
-        3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a carosel that displays 3 pictures that repersent the 3 categories you can buy from the store.
+        2. The main points are the 3 categories of the store
+        3. The user options to learn more about the organisation.
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
