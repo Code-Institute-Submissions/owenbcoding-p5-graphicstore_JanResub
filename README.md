@@ -386,10 +386,6 @@ When making a test payment you need to use the following testing card from stipe
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
--   []
--   []
--   []
-
 ### Content
 
 - All the content was done by me owenbcoding such as text and writing
@@ -407,7 +403,7 @@ When making a test payment you need to use the following testing card from stipe
 
 -   My Mentor for continuous helpful feedback.
 
--   Tutor support at Code Institute for their support.
+-   Tutor support at Code Institutes slack for their support.
 
 -   Credit to Mikaela https://github.com/mikakallberg for helping me with crud functionality for comments
 
