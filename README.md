@@ -231,9 +231,17 @@ In this section, I will go over each of the sections on the website such as the 
 
   <img src="media/profile-content.png" alt="profile-page" >
 
+  __Shopping__
+
+  <img src="media/shopping-cart.png" alt="ticket" >
+
   __The Checkout Page__
 
   <img src="media/checkout-content.png" alt="checkout-page" >
+
+   __order-confirmation__
+
+  <img src="media/order-confirmation.png" alt="order-page" >
 
   __The Register Page__
 
@@ -256,27 +264,24 @@ In this section, I will go over each of the sections on the website such as the 
 
   <img src="media/createticket.png" alt="ticket" >
   <img src="media/ticket-content.png" alt="ticket-page" >
-  
-  __Shopping__
 
-  <img src="media/shopping-cart.png" alt="ticket" >
-
- __Drop-down__
- - Product management is only shown for super users
+  __Drop-down__
+  - Product management is only shown for super users
  
   <img src="media/product-management.png" alt="management" >
 
- - My Profile and logout is only shown for users who are logged in regular users dont have product management
+  - My Profile and logout is only shown for users who are logged in regular users dont have product management
 
   <img src="media/normal-user.png" alt="user-links" >
 
-__Sign-out-page__
+  __Sign-out-page__
 
   <img src="media/sign-out.png" alt="sign-out" >
 
-__Success-message__
+  __Success-message__
 
   <img src="media/success.png" alt="success" >
+
 
 </details>
 
@@ -286,6 +291,12 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+
+## Stripe Payments 
+
+When making a test payment you need to use the following testing card from stipe and make sure you put in your zip code numbers at the end for the payment to work properly just the numbers as shown below
+
+<img src="media/testpayment.png" alt="payment" >
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -301,9 +312,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
 
     3. As a First Time Visitor, you can locate their social media links to see their following on social media on facebook.
-        1. Once the new visitor has read the About Us and What We Do text, they will understand what the site is about.
+        1. Once the new visitor has read the About page, they will understand what the site is about.
         2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
 
 -   #### Returning Visitor Goals
 
