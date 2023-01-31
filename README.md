@@ -26,7 +26,7 @@ Graphic Store is a site where users can see art work and people can view the dif
         5. As a Returning Visitor, you will be able to see comments on the graphic desingers art work.
 
     -   #### Frequent User Goals
-        1. As a Frequent User, You will be to test buy a product by trying one of stripes testing cards.
+        1. As a Frequent User, You will be to test buy a product by trying one of stripes testing cards shown at the bottom.
         2. As a Frequent User, You will be able to come back and see if there is any new art work in the store.
         3. As a Frequent User, You will be able to see any changes made to the site.
     
@@ -40,7 +40,7 @@ Graphic Store is a site where users can see art work and people can view the dif
 
 -   ## Technical design
     - ### Agile design
-    - I used An Agile approach to creating this app has been applied. I used Githubs project kanban board to track issues I made and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience. Since only worked on this project solo I only used the one the main branch to implement the features on the site on the site. And also due to the the Time constraint I was not able to implement the emailing with mailchimp for the newsletter and email for the store.
+    - I used An Agile approach to creating this app has been applied. I used Githubs project kanban board to track issues I made and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience. Since only worked on this project solo I only used the one the main branch to implement the features on the site on the site. And also due to the the Time constraint I was not able to implement the emailing with mailchimp for the newsletter and email for the store. 
 
     - By taking using AGILE methodology in this project i was able to deliver a site which had all required functionality. Due to the time limit on this project i was not able to incorporate all intial listed features but this is where an AGILE approach is great for app design. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation.
 
@@ -292,10 +292,9 @@ For Marketing I made a facebook page for the website
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+## Known Bugs 
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+   Currently there seems to be an issue with the filtering and searching for a specific Art name that needs to be fixed
 
 ## Stripe Payments 
 
@@ -319,18 +318,17 @@ When making a test payment you need to use the following testing card from stipe
     3. As a First Time Visitor, you can locate their social media links to see their following on social media on facebook.
         1. Once the new visitor has read the About page, they will understand what the site is about.
         2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
+        3. .
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to find the new .
+    1. As a Returning Visitor, I want to find the new art work on the store page or in the carosel when they are added to the page.
 
-        1. These are clearly shown in the .
-        2. They will be directed to a page with .
-
-        1. The navigation bar clearly highlights the "Contact Us" Page.
-        2. Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
-        3. The footer contains links to the organisations Facebook page as well as the organization's email.
-        4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
+        1. These are clearly shown on the home page and on the store page.
+        2. The navigation bar clearly shows the three main naviagion links.
+        3. Then they can visit their profile page in the top corner where the my account icon is located
+        4. From there they can login as their created user and buy something from the store.
+        5. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
 
     3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
         1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
@@ -345,14 +343,15 @@ When making a test payment you need to use the following testing card from stipe
 
     3. As a Frequent User, I want to check to see if there are any new art categories.
 
-    4. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation Due to the time constraint I was not able to implement the email functionality for this to work.
+    4. As a Frequent User, you will be able to able to comment on products you like etc.
         1. At the bottom of every page their is a footer which content is consistent throughout all pages.
-        2. To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
+        2. On the Top of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
         3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
 
 ### Further Testing
 
--   The Website was tested on Google Chrome And Firefox
+-   The Website was tested on Google Chrome And Firefox all seemed to be working
+-   There was some responsiveness issues with the crispy forms I was not able to fix at the bottom of the site in mobile view
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
@@ -426,10 +425,19 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 I used ElephantSQL for the database by connecting it to the project and Heroku 
 <details>
     <summary>-ElephantSQL:</summary>
+
+  - Start by creating your database on elephantSQL then make sure its set up correctly with the proper settings
+  - I followed the steps on for setting up elphant sql through code institutes video guide 
+
+  <img src="media/elephantsql.png" alt="database" >
+  
 </details>    
 
 ### Heroku And Github
 I connected ElephantSQL to my project and then to herkou by setting up the config vars for the projects deployment
 <details>
     <summary>-Heroku:</summary>
+
+<img src="media/heroku.png" alt="database" >
+
 </details>    
