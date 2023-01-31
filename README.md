@@ -40,7 +40,7 @@ Graphic Store is a site where users can see art work and people can view the dif
 
 -   ## Technical design
     - ### Agile design
-    - I used An Agile approach to creating this app has been applied. I used Githubs project kanban board to track issues I made and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience. Since only worked on this project solo I only used the one the main branch to implement the features on the site on the site.
+    - I used An Agile approach to creating this app has been applied. I used Githubs project kanban board to track issues I made and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience. Since only worked on this project solo I only used the one the main branch to implement the features on the site on the site. And also due to the the Time constraint I was not able to implement the emailing with mailchimp for the newsletter and email for the store.
 
     - By taking using AGILE methodology in this project i was able to deliver a site which had all required functionality. Due to the time limit on this project i was not able to incorporate all intial listed features but this is where an AGILE approach is great for app design. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation.
 
@@ -222,7 +222,6 @@ In this section, I will go over each of the sections on the website such as the 
 
   <img src="media/store-content.png" alt="store-page" >
  
-
   __Detailed Product Page__
 
   <img src="media/detailed-product.png" alt="detailed-page" >
@@ -284,6 +283,12 @@ In this section, I will go over each of the sections on the website such as the 
 
 
 </details>
+
+## Marketing
+
+For Marketing I made a facebook page for the website 
+
+<img src="media/marketingpage.png" alt="success" >
 
 ## Testing
 
