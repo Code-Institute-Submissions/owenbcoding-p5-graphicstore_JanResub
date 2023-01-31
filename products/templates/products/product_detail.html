@@ -118,27 +118,29 @@
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
                         <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
-                        {{ comment.name }}
+                        {{ comment.user }}
                         <span class=" text-muted font-weight-normal">
                             <!-- The comment's created date goes here -->
                             {{ comment.created_on }}
-                            {{ user.username }}
+                            {{ comment.user.name }}
                         </span> wrote:
                     </p>
-                    <form method="post" action="{% url 'delete_comment' comment.id %}">
-                        {% csrf_token %}
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-danger">Delete Comment</button>
-                        </div>
-                    </form>
-                    <!-- The body of the comment goes before the | -->
-                    {{ comment.body | linebreaks }}
-                    <h3>Please Edit your comment here:</h3>
-                    <form method="post" action="{% url 'update_comment' comment.id %}" style="margin-top: 1.3em;">
-                        {{ form | crispy }}
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-signup btn-lg">Edit</button>
-                    </form>
+                     <!-- The body of the comment goes before the | -->
+                     {{ comment.body | linebreaks }}
+                    {% if request.user.is_authenticated and request.user.id == comment.user.id %}
+                        <form method="post" action="{% url 'delete_comment' comment.id %}">
+                            {% csrf_token %}
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-danger">Delete Comment</button>
+                            </div>
+                        </form>
+                        <h3>Please Edit your comment here:</h3>
+                        <form method="post" action="{% url 'update_comment' comment.id %}" style="margin-top: 1.3em;">
+                            {{ form | crispy }}
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-signup btn-lg">Edit</button>
+                        </form>
+                    {% endif %}
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}
