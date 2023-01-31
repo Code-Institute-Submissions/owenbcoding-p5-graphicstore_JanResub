@@ -26,9 +26,9 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class CommentAdmin(admin.ModelAdmin):
 
-    list_display = ('id', 'name', 'body', 'product', 'created_on')
+    list_display = ('id', 'user', 'body', 'product', 'created_on')
     list_filter = ('created_on',)
-    search_fields = ('name', 'email', 'body')
+    search_fields = ('user', 'email', 'body')
 
 
 admin.site.register(Comment, CommentAdmin)
