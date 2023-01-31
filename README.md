@@ -78,7 +78,7 @@
 
     - Register Page: The Register page consists of a sign up form for the user to create a user name and a password for their account
     
-    - Login Page: The Login page consists of a similar form like the register page but this for after the user has created their account
+    - Login Page: The Login page consists of a similar form like the register page but this for after the user has created their account they will have created their profile page
 
     - Profile Page: The Profile Page consists of the details for the persons delivery and their order history which you can view on the right side there is also a ticket section at the bottom and update your email for the newsletter if you want to change your email for that.
   
@@ -105,6 +105,7 @@
 
 * ### Robots 
      I went to this site map to get a demo for the robots.txt https://en.ryte.com/
+     I didn't know how to do this robots part as I couldnt not find any resources in time for this part
 
 * # Wireframes
     <details>
@@ -333,7 +334,7 @@ When making a test payment you need to use the following testing card from stipe
     3. As a First Time Visitor, you can locate their social media links to see their following on social media on facebook.
         1. Once the new visitor has read the About page, they will understand what the site is about.
         2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. .
+        3. The user can sign up to the newsletter if they like to for updates once the functionality is added
 
 -   #### Returning Visitor Goals
 
@@ -347,8 +348,7 @@ When making a test payment you need to use the following testing card from stipe
 
     3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
         1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
-        2. Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the "Join Now!" button which like any external link, will open in a new tab to ensure they can get back to the website easily.
-        3. If the user is on the "Our Favourites" page they will also be greeted with a call to action button to invite the user to the Facebook group. The user is incentivized as they are told there is a weekly favourite product posted in the group.
+        2. Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the fontawesom icon for facbook "link" , will open in a new tab to ensure they can get back to the website easily.
 
 -   #### Frequent User Goals
 
@@ -360,8 +360,7 @@ When making a test payment you need to use the following testing card from stipe
 
     4. As a Frequent User, you will be able to able to comment on products you like etc.
         1. At the bottom of every page their is a footer which content is consistent throughout all pages.
-        2. On the Top of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
-        3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
+        2. On the Top of the footer the user can see "unSubscribe to our Newsletter" and are prompted to Enter their email address.
 
 ### Further Testing
 
@@ -373,7 +372,7 @@ When making a test payment you need to use the following testing card from stipe
 ### Known Bugs
 
 -   On some mobile devices the Hero Image pushes the size of of the carosel image is stretched up abit
-
+-   On some mobile devices the bottom of the footer where the newsletter is is a bit squished up 
 
 <details>
     <summary>-Testing Screen Shots:</summary>
@@ -381,7 +380,6 @@ When making a test payment you need to use the following testing card from stipe
   - __Test if sql dumps data on input to see if any user data is displayed on the page__
 
   ![brave_13EBdzRbYl](https://user-images.githubusercontent.com/43074374/204933868-ba742bed-2943-4169-a97e-af0542d3224c.png)
-
 
   - __Order confirmation for when a product is bought__
 
@@ -453,6 +451,6 @@ I connected ElephantSQL to my project and then to herkou by setting up the confi
 <details>
     <summary>-Heroku:</summary>
 
-<img src="media/heroku.png" alt="database" >
+  <img src="media/heroku.png" alt="database" >
 
 </details>    
