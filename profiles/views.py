@@ -25,11 +25,10 @@ def profile(request):
             messages.success(request, 'Profile updated successfully')
         else: 
             messages.error(reuqest, 'Update failed. PLease ensure the form is valid.')
-    else:
-        form = UserProfileForm(instance=profile)
-        ticketform = TicketForm()
-        orders = profile.orders.all()
-        tickets = Ticket.objects.filter(user=request.user)
+    form = UserProfileForm(instance=profile)
+    orders = profile.orders.all()
+    tickets = Ticket.objects.filter(user=request.user)
+    ticketform = TicketForm()
 
     template = 'profiles/profile.html'
     context = {
