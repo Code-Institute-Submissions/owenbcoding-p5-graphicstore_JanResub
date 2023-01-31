@@ -1,6 +1,6 @@
 <h1 align="center">Graphic Store</h1>
 
-Graphic Store is a site where users can see art work and people can view the differnt type of art the artist does and can order packages that have a discription of the art they are buying.
+"Graphic Store" caters to a diverse audience who are seeking visually appealing artwork for various uses. Whether it's for personalizing their desktop background, setting it as their profile picture on social media, or simply as a form of decor, the website offers a wide range of graphic designs that can cater to these needs. The store aims to provide a platform for individuals to access and purchase high-quality art that can enhance the look and feel of their personal or professional online presence. With a user-friendly interface and a broad selection of art, Graphic Store makes it easy for anyone to find the perfect artwork to suit their taste and preferences.
 
 # Project Five
 
@@ -49,7 +49,7 @@ Graphic Store is a site where users can see art work and people can view the dif
     - Create - Users can create a profile account and create comments / tickets and sign up for a newsletter
     - Read - Users can read the discription of the art work details and read their oder history details.
     - Update - Users can update their location details and newsletter email and comments
-    - Delete - Useres can delete thier comments and remove thier email for the newsletter if they so choose.
+    - Delete - Useres can delete thier comments and remove thier email for the newsletter if they so choose and their tickets.
 
 -   ### Colours
      - The three main colours used are white for the background and black for the text. 
@@ -59,12 +59,6 @@ Graphic Store is a site where users can see art work and people can view the dif
 
 -   #### Imagery
      - The Imagery comes from a variatey of places such as Freepik and Pixabay I thought would be best for the site.
-
-### Features I aimed to achieve with this project:
-
- - I aimed to achive a nice easy to navigate site with minimal effort
- - I amed to bring people in who are intrested in art but dont have the time to do it
- - I aimed to make an easy to use graphic for a user to purchase art work they like.
 
 # Structure
 
@@ -191,7 +185,13 @@ Graphic Store is a site where users can see art work and people can view the dif
 - I aimed the site to be driven more towards developers who wish to blog and talk about their projects
 - I aimed to bring in more people and people who are new to tech and want to learn more.
 
-In this section, I will go over each of the sections on the website such as the Navigation Bar, Main Page, Blog page, Footer section, admin 
+In this section, I will go over each of the sections on the website such as the Navigation Bar, Main Page, About page, store page and admin section.
+
+### Features I aimed to achieve with this project:
+
+ - I aimed to achive a nice easy to navigate site with minimal effort
+ - I amed to bring people in who are intrested in art but dont have the time to do it
+ - I aimed to make an easy to use graphic for a user to purchase art work they like.
 
 ### Existing Features
   # Features
@@ -281,6 +281,19 @@ In this section, I will go over each of the sections on the website such as the 
 
   <img src="media/success.png" alt="success" >
 
+  __Admin-add-Product-Page__
+
+  <img src="media/addproduct.png" alt="addproduct" >
+  <img src="media/addproduct2.png" alt="addproduct2" >
+
+  __Edit-Product-Page__
+
+  <img src="media/editproduct.png" alt="editproduct" >
+  <img src="media/editproduct2.png" alt="editproduct2" >
+
+  __Delete-product__
+
+  <img src="media/deleteproduct.png" alt="deleteproduct" >
 
 </details>
 
