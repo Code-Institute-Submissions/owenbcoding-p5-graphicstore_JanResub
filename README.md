@@ -1,5 +1,7 @@
 <h1 align="center">Graphic Store</h1>
 
+[View the live project here.](https://graphic-store.herokuapp.com/)
+
 "Graphic Store" caters to a diverse audience who are seeking visually appealing artwork for various uses. Whether it's for personalizing their desktop background, setting it as their profile picture on social media, or simply as a form of decor, the website offers a wide range of graphic designs that can cater to these needs. The store aims to provide a platform for individuals to access and purchase high-quality art that can enhance the look and feel of their personal or professional online presence. With a user-friendly interface and a broad selection of art, Graphic Store makes it easy for anyone to find the perfect artwork to suit their taste and preferences.
 
 # Project Five
@@ -72,7 +74,7 @@
 
     - About Page: The About page shows you same navbar as the home page and also the carosel just below the navbar and some nice boot strap card components to explain the the three topics of the site for the art work.
 
-    - Store Page: The store page has the same thing again for the navbar and the carosel at the top the rest of the page is just a  
+    - Store Page: The store page has the same thing again for the navbar and the carosel at the top the rest of the page is just has the cards at the bottom with some text for the content on each category of art
 
     - Register Page: The Register page consists of a sign up form for the user to create a user name and a password for their account
     
