@@ -6,7 +6,6 @@ from .models import Newsletter
 from django.http import HttpResponseRedirect
 
 
-
 def index(request): 
     """ A view to return the index page"""
     form = NewsletterForm()
